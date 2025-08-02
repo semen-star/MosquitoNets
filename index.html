@@ -1,44 +1,517 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Москитные сетки | Магнитогорск</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Москитные сетки на заказ в Магнитогорске</title>
   <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-  <div class="overlay">
-    <header class="fade-in">
-      <h1>Москитные сетки на заказ в Магнитогорске</h1>
-      <p>Качественно, быстро и надёжно</p>
-    </header>
-    <main>
-      <div class="buttons fade-in">
-        <a href="https://t.me/starikov_80" class="btn tg-btn" target="_blank">Написать в Telegram</a>
-        <a href="tel:+79090954885" class="btn call-btn">Позвонить</a>
-      </div>
-      <section class="gallery fade-in">
-        <h2>Наши работы</h2>
-        <div class="photos">
-          <img src="imgs/1.jpg" alt="Пример работы 1">
-          <img src="imgs/2.jpg" alt="Пример работы 2">
-          <img src="imgs/3.jpg" alt="Пример работы 3">
-          <img src="imgs/4.jpg" alt="Пример работы 4">
-          <img src="imgs/5.jpg" alt="Пример работы 5">
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-green-700 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-mosquito text-2xl text-yellow-300"></i>
+                    <h1 class="text-2xl md:text-3xl font-bold">Москитные сетки <span class="text-yellow-300">Магнитогорск</span></h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#about" class="hover:text-yellow-300 transition">О нас</a>
+                    <a href="#products" class="hover:text-yellow-300 transition">Продукция</a>
+                    <a href="#contacts" class="hover:text-yellow-300 transition">Контакты</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-2xl focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-      </section>
-    </main>
-  </div>
-  <footer class="fade-in">
-    <p>&copy; 2025 Москитные сетки | Сделано Семёном</p>
-  </footer>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden bg-green-800 md:hidden">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-3">
+                <a href="#about" class="hover:text-yellow-300 transition">О нас</a>
+                <a href="#products" class="hover:text-yellow-300 transition">Продукция</a>
+                <a href="#contacts" class="hover:text-yellow-300 transition">Контакты</a>
+            </div>
+        </div>
+    </header>
 
-  <!-- Lightbox контейнер -->
-  <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
-  </div>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-green-600 to-green-800 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-mesh opacity-20"></div>
+        <div class="container mx-auto px-4 py-20 md:py-32 relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 fade-in">Изготовление москитных сеток <span class="text-yellow-300">на заказ</span></h1>
+                <p class="text-xl md:text-2xl mb-8 fade-in delay-1">Индивидуальные размеры. Быстрое производство. Доставка и установка в Магнитогорске и области.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 fade-in delay-2">
+                    <a href="tel:+79090954885" class="bg-yellow-400 hover:bg-yellow-500 text-green-900 font-bold py-3 px-6 rounded-lg text-center transition duration-300 hover-scale">
+                        <i class="fas fa-phone mr-2"></i> Позвонить: +7 (909) 095-48-85
+                    </a>
+                    <a href="#contacts" class="bg-transparent hover:bg-green-700 border-2 border-white text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300 hover-scale">
+                        <i class="fas fa-map-marker-alt mr-2"></i> Наш адрес
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 right-0 w-full md:w-1/2 h-full flex items-end justify-end opacity-70">
+            <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                 alt="Окно с москитной сеткой" 
+                 class="w-full h-full object-cover object-center">
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-green-800 fade-in">Почему выбирают нас</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 fade-in delay-1 hover-scale">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-800">Индивидуальные размеры</h3>
+                    <p class="text-gray-600">Изготавливаем сетки точно по вашим размерам для идеальной посадки в оконные и дверные проёмы.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 fade-in delay-2 hover-scale">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-800">Быстрое изготовление</h3>
+                    <p class="text-gray-600">Средний срок изготовления - 1-2 дня. Срочные заказы выполняем в день обращения.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 fade-in delay-3 hover-scale">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-green-800">Качественные материалы</h3>
+                    <p class="text-gray-600">Используем только проверенные материалы от надежных поставщиков. Гарантия на изделия.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8 fade-in">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-800">О нашей компании</h2>
+                    <p class="text-gray-700 mb-4 text-lg">Мы специализируемся на изготовлении москитных сеток на заказ в Магнитогорске уже более 4 лет.</p>
+                    <p class="text-gray-700 mb-4 text-lg">Наши мастера имеют большой опыт работы и создают качественные изделия, которые прослужат вам долгие годы.</p>
+                    <p class="text-gray-700 mb-6 text-lg">Каждая сетка изготавливается индивидуально под ваши размеры с учетом особенностей оконного или дверного проёма.</p>
+                    <div class="bg-green-100 border-l-4 border-green-600 p-4">
+                        <p class="text-green-800 font-medium"><i class="fas fa-info-circle mr-2 text-green-600"></i> Мы работаем как с частными клиентами, так и с организациями.</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 fade-in delay-1">
+                    <div class="relative rounded-xl overflow-hidden shadow-xl hover-scale">
+                        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                             alt="Процесс изготовления москитных сеток" 
+                             class="w-full h-auto rounded-xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                            <div>
+                                <p class="text-white text-lg font-medium">Профессиональный подход к каждому заказу</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-green-800 fade-in">Наша продукция</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 fade-in delay-1 hover-scale">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Стандартная москитная сетка" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-800">Стандартная сетка</h3>
+                        <p class="text-gray-600 mb-4">Классическое решение для защиты от насекомых. Подходит для большинства окон.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-700 font-bold">от 1500 руб.</span>
+                            <button class="text-green-600 hover:text-green-800 font-medium">Подробнее →</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 fade-in delay-2 hover-scale">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566752227-8f3d8a1c4d1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Дверная москитная сетка" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-800">Дверная сетка</h3>
+                        <p class="text-gray-600 mb-4">Усиленная конструкция для дверных проёмов. Удобное открывание.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-700 font-bold">от 3500 руб.</span>
+                            <button class="text-green-600 hover:text-green-800 font-medium">Подробнее →</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 fade-in delay-3 hover-scale">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1622372738946-62e02505feb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" 
+                             alt="Рулонная москитная сетка" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-800">Рулонная система</h3>
+                        <p class="text-gray-600 mb-4">Современное решение - сетка сворачивается в короб, когда не нужна.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-700 font-bold">от 5000 руб.</span>
+                            <button class="text-green-600 hover:text-green-800 font-medium">Подробнее →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- How we work Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-green-800 fade-in">Как мы работаем</h2>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 h-full w-1 bg-green-600 transform -translate-x-1/2"></div>
+                
+                <!-- Steps -->
+                <div class="space-y-12 md:space-y-0">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-center md:items-start mb-12 md:mb-24 fade-in">
+                        <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+                            <h3 class="text-2xl font-bold text-green-700 mb-2">1. Заявка</h3>
+                            <p class="text-gray-700">Оставляете заявку по телефону. Консультация бесплатно.</p>
+                        </div>
+                        <div class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg z-10 md:mx-4">
+                            1
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                            <img src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                 alt="Заявка" 
+                                 class="rounded-lg shadow-md w-full h-48 object-cover">
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row items-center md:items-start mb-12 md:mb-24 fade-in delay-1">
+                        <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 order-3 md:order-1 md:text-right">
+                            <img src="https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                 alt="Замер" 
+                                 class="rounded-lg shadow-md w-full h-48 object-cover">
+                        </div>
+                        <div class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg z-10 md:mx-4 order-2">
+                            2
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0 order-1 md:order-3">
+                            <h3 class="text-2xl font-bold text-green-700 mb-2">2. Замер</h3>
+                            <p class="text-gray-700">Наш специалист приезжает к вам для точного замера (при необходимости).</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-center md:items-start mb-12 md:mb-24 fade-in delay-2">
+                        <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 md:text-right">
+                            <h3 class="text-2xl font-bold text-green-700 mb-2">3. Изготовление</h3>
+                            <p class="text-gray-700">Изготавливаем сетку по вашим размерам из качественных материалов.</p>
+                        </div>
+                        <div class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg z-10 md:mx-4">
+                            3
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                 alt="Изготовление" 
+                                 class="rounded-lg shadow-md w-full h-48 object-cover">
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row items-center md:items-start fade-in delay-3">
+                        <div class="md:w-1/2 md:pr-12 mb-6 md:mb-0 order-3 md:order-1 md:text-right">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                 alt="Установка" 
+                                 class="rounded-lg shadow-md w-full h-48 object-cover">
+                        </div>
+                        <div class="w-16 h-16 rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg z-10 md:mx-4 order-2">
+                            4
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0 order-1 md:order-3">
+                            <h3 class="text-2xl font-bold text-green-700 mb-2">4. Установка</h3>
+                            <p class="text-gray-700">Доставляем и устанавливаем готовую сетку. Вы наслаждаетесь комфортом без насекомых!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!--   
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-green-800 fade-in">Отзывы клиентов</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md fade-in delay-1 hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700 font-bold mr-4">ИК</div>
+                        <div>
+                            <h4 class="font-bold">Ирина К.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Заказывала сетки на все окна в квартире. Сделали быстро, качественно, установили аккуратно. Теперь можно спокойно проветривать без комаров!"</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md fade-in delay-2 hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700 font-bold mr-4">АС</div>
+                        <div>
+                            <h4 class="font-bold">Александр С.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Нужна была нестандартная сетка на балконную дверь. Сделали идеально по размерам, материал качественный. Прошло уже 2 года - сетка как новая."</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md fade-in delay-3 hover-scale">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700 font-bold mr-4">ОМ</div>
+                        <div>
+                            <h4 class="font-bold">Ольга М.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Очень довольна сервисом. Консультация была подробной, приехали в удобное время, сделали все быстро. Цены адекватные за такое качество."</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-green-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 fade-in">Готовы заказать москитную сетку?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto fade-in delay-1">Оставьте заявку прямо сейчас и получите бесплатную консультацию нашего специалиста!</p>
+            
+            
+            <div class="mt-8 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 fade-in delay-3">
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt text-2xl mr-3 text-yellow-300"></i>
+                    <div>
+                        <p class="text-sm text-green-200">Звоните нам</p>
+                        <a href="tel:+79090954885" class="text-xl font-bold hover:text-yellow-300">+7 (909) 095-48-85</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-clock text-2xl mr-3 text-yellow-300"></i>
+                    <div>
+                        <p class="text-sm text-green-200">Режим работы</p>
+                        <p class="text-lg font-bold">Пн-Пт: 9:00-19:00, Сб: 10:00-16:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-green-800 fade-in">Наши контакты</h2>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8 fade-in">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-6 hover-scale">
+                        <h3 class="text-xl font-bold mb-4 text-green-700 flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-green-600"></i> Адрес
+                        </h3>
+                        <p class="text-gray-700">Челябинская область, город Магнитогорск, посёлок Западный 2, улица Светлая, 47</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-6 hover-scale">
+                        <h3 class="text-xl font-bold mb-4 text-green-700 flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-green-600"></i> Телефон
+                        </h3>
+                        <p class="text-gray-700">
+                            <a href="tel:+79090954885" class="hover:text-green-700 font-medium">+7 (909) 095-48-85</a>
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md hover-scale">
+                        <h3 class="text-xl font-bold mb-4 text-green-700 flex items-center">
+                            <i class="fas fa-clock mr-3 text-green-600"></i> Режим работы
+                        </h3>
+                        <p class="text-gray-700 mb-2">Понедельник - Пятница: 9:00 - 19:00</p>
+                        <p class="text-gray-700">Суббота: 10:00 - 16:00</p>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 fade-in delay-1">
+                    <div class="bg-white p-1 rounded-xl shadow-xl overflow-hidden hover-scale">
+                        <!-- Map placeholder - in real project you would embed Google Maps or Yandex Maps -->
+                        <div class="h-96 bg-gray-200 flex items-center justify-center">
+                            <div class="text-center p-6">
+                                <i class="fas fa-map-marked-alt text-5xl text-green-600 mb-4"></i>
+                                <h3 class="text-xl font-bold text-green-800 mb-2">Мы находимся здесь</h3>
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad70f801c93dbfab04f1d14a7f6707639d693384c07ef88ed23d3b4912846e55f&amp;source=constructor" width="750" height="400" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-green-800 fade-in">Часто задаваемые вопросы</h2>
+            
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg overflow-hidden fade-in delay-1 hover-scale">
+                    <button class="faq-btn w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <span class="font-medium text-green-800">Как долго изготавливается москитная сетка?</span>
+                        <i class="fas fa-chevron-down text-green-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 border-t border-gray-200">
+                        <p class="text-gray-700">Стандартный срок изготовления - 1-2 рабочих дня. В сезон высокой загрузки (летние месяцы) срок может увеличиться до 3 дней. Срочные заказы (в день обращения) возможны за дополнительную плату.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden fade-in delay-2 hover-scale">
+                    <button class="faq-btn w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <span class="font-medium text-green-800">Нужно ли мне самому делать замеры?</span>
+                        <i class="fas fa-chevron-down text-green-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 border-t border-gray-200">
+                        <p class="text-gray-700">Вы можете сделать замеры самостоятельно (мы предоставим инструкцию) или заказать выезд нашего специалиста. Выезд замерщика возможен в пределах Магнитогорска и ближайших районов.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden fade-in delay-3 hover-scale">
+                    <button class="faq-btn w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <span class="font-medium text-green-800">Как ухаживать за москитной сеткой?</span>
+                        <i class="fas fa-chevron-down text-green-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 border-t border-gray-200">
+                        <p class="text-gray-700">Рекомендуем 1-2 раза в сезон очищать сетку мягкой щеткой или пылесосом с мягкой насадкой. При сильных загрязнениях можно аккуратно промыть сетку водой с мягким моющим средством, избегая сильного давления воды.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden fade-in delay-4 hover-scale">
+                    <button class="faq-btn w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <span class="font-medium text-green-800">Есть ли гарантия на ваши изделия?</span>
+                        <i class="fas fa-chevron-down text-green-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4 border-t border-gray-200">
+                        <p class="text-gray-700">Да, мы предоставляем гарантию 1 год на все наши изделия. Гарантия покрывает производственные дефекты и проблемы с фурнитурой. Гарантия не распространяется на повреждения, вызванные неправильной эксплуатацией или механическими воздействиями.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between mb-8">
+                <div class="mb-8 md:mb-0 md:w-1/4 fade-in">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mosquito text-2xl text-yellow-300 mr-2"></i>
+                        <h3 class="text-xl font-bold">Москитные сетки Магнитогорск</h3>
+                    </div>
+                    <p class="text-green-200">Изготовление и установка москитных сеток на заказ в Магнитогорске и области.</p>
+                </div>
+                
+                <div class="mb-8 md:mb-0 md:w-1/4 fade-in delay-1">
+                    <h3 class="text-lg font-bold mb-4 border-b border-green-700 pb-2">Меню</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-green-200 hover:text-yellow-300 transition">О нас</a></li>
+                        <li><a href="#products" class="text-green-200 hover:text-yellow-300 transition">Продукция</a></li>
+                        <li><a href="#contacts" class="text-green-200 hover:text-yellow-300 transition">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mb-8 md:mb-0 md:w-1/4 fade-in delay-2">
+                    <h3 class="text-lg font-bold mb-4 border-b border-green-700 pb-2">Контакты</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-green-400"></i>
+                            <span class="text-green-200">ул. Светлая, 47, Магнитогорск</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-green-400"></i>
+                            <a href="tel:+79090954885" class="text-green-200 hover:text-yellow-300 transition">+7 (909) 095-48-85</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-3 text-green-400"></i>
+                            <span class="text-green-200">Пн-Пт: 9:00-19:00, Сб: 10:00-16:00</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="md:w-1/4 fade-in delay-3">
+                    <h3 class="text-lg font-bold mb-4 border-b border-green-700 pb-2">Мы в соцсетях</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-green-800 hover:bg-green-700 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-green-800 hover:bg-green-700 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-green-800 hover:bg-green-700 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-6 border-t border-green-800 text-center text-green-400 text-sm fade-in delay-4">
+                <p>© 2025 Москитные сетки Магнитогорск. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp button -->
+    <a href="https://wa.me/79090954885" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl z-50 transition-all hover:scale-110">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+    <script src="script.js"></script>
 </body>
 </html>
